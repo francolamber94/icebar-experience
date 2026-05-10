@@ -34,14 +34,18 @@ const nextConfig = {
         { source: '/api/mercado-pago/:path*', destination: `${LT}/api/mercado-pago/:path*` },
         { source: '/api/iframe-verify', destination: `${LT}/api/iframe-verify` },
         { source: '/api/public/:path*', destination: `${LT}/api/public/:path*` },
-        // Next.js internals para que el SSR de LibreTickets pueda hidratar bien
+        // Next.js internals que SI o SI tienen que ir a LT (data SSG/ISR e image proxy)
         { source: '/_next/data/:path*', destination: `${LT}/_next/data/:path*` },
-        { source: '/_next/static/:path*', destination: `${LT}/_next/static/:path*` },
         { source: '/_next/image', destination: `${LT}/_next/image` },
         // Auth flows que LibreTickets necesita para login en checkout
         { source: '/api/auth/:path*', destination: `${LT}/api/auth/:path*` },
         { source: '/login', destination: `${LT}/login` },
         { source: '/login/:path*', destination: `${LT}/login/:path*` },
+      ],
+      // Despues del filesystem del landing: si /_next/static/* no existe en este
+      // proyecto, lo pedimos a LT (chunks que pertenecen a paginas rewriteadas).
+      afterFiles: [
+        { source: '/_next/static/:path*', destination: `${LT}/_next/static/:path*` },
       ],
       // Fallback: cualquier path que el landing no haya manejado cae aca.
       // Esto cubre el companyTag en raiz (/<empresa>), que es la pagina publica
