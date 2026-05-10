@@ -1,5 +1,11 @@
 /** @type {import('next').NextConfig} */
 const LT = process.env.LIBRETICKETS_BASE_URL || 'https://app.libretickets.com';
+// Tag de la empresa duenia de este landing. Se inyecta como query param en
+// cada rewrite a LibreTickets para que el SSR de LT pueda aplicar branding
+// white-label sin depender de headers (Vercel cross-project rewrite NO
+// preserva host/x-forwarded-host: ambos llegan como libretickets.com).
+const TENANT_TAG = process.env.NEXT_PUBLIC_TENANT_TAG || 'icebarexperience';
+const t = (path) => `${LT}${path}${path.includes('?') ? '&' : '?'}__tenant=${TENANT_TAG}`;
 
 const nextConfig = {
   reactStrictMode: true,
@@ -20,27 +26,27 @@ const nextConfig = {
   async rewrites() {
     return {
       beforeFiles: [
-        { source: '/post/:path*', destination: `${LT}/post/:path*` },
-        { source: '/appointment/:path*', destination: `${LT}/appointment/:path*` },
-        { source: '/checkout', destination: `${LT}/checkout` },
-        { source: '/checkout/:path*', destination: `${LT}/checkout/:path*` },
-        { source: '/checkout-complete/:path*', destination: `${LT}/checkout-complete/:path*` },
-        { source: '/b/:ticketId', destination: `${LT}/b/:ticketId` },
-        { source: '/i/:ticketId', destination: `${LT}/i/:ticketId` },
-        { source: '/c/:companyId', destination: `${LT}/c/:companyId` },
-        { source: '/tickets/:path*', destination: `${LT}/tickets/:path*` },
-        { source: '/saved-tickets', destination: `${LT}/saved-tickets` },
-        { source: '/api/trpc/:path*', destination: `${LT}/api/trpc/:path*` },
-        { source: '/api/mercado-pago/:path*', destination: `${LT}/api/mercado-pago/:path*` },
-        { source: '/api/iframe-verify', destination: `${LT}/api/iframe-verify` },
-        { source: '/api/public/:path*', destination: `${LT}/api/public/:path*` },
+        { source: '/post/:path*', destination: t('/post/:path*') },
+        { source: '/appointment/:path*', destination: t('/appointment/:path*') },
+        { source: '/checkout', destination: t('/checkout') },
+        { source: '/checkout/:path*', destination: t('/checkout/:path*') },
+        { source: '/checkout-complete/:path*', destination: t('/checkout-complete/:path*') },
+        { source: '/b/:ticketId', destination: t('/b/:ticketId') },
+        { source: '/i/:ticketId', destination: t('/i/:ticketId') },
+        { source: '/c/:companyId', destination: t('/c/:companyId') },
+        { source: '/tickets/:path*', destination: t('/tickets/:path*') },
+        { source: '/saved-tickets', destination: t('/saved-tickets') },
+        { source: '/api/trpc/:path*', destination: t('/api/trpc/:path*') },
+        { source: '/api/mercado-pago/:path*', destination: t('/api/mercado-pago/:path*') },
+        { source: '/api/iframe-verify', destination: t('/api/iframe-verify') },
+        { source: '/api/public/:path*', destination: t('/api/public/:path*') },
         // Next.js internals que SI o SI tienen que ir a LT (data SSG/ISR e image proxy)
-        { source: '/_next/data/:path*', destination: `${LT}/_next/data/:path*` },
-        { source: '/_next/image', destination: `${LT}/_next/image` },
+        { source: '/_next/data/:path*', destination: t('/_next/data/:path*') },
+        { source: '/_next/image', destination: t('/_next/image') },
         // Auth flows que LibreTickets necesita para login en checkout
-        { source: '/api/auth/:path*', destination: `${LT}/api/auth/:path*` },
-        { source: '/login', destination: `${LT}/login` },
-        { source: '/login/:path*', destination: `${LT}/login/:path*` },
+        { source: '/api/auth/:path*', destination: t('/api/auth/:path*') },
+        { source: '/login', destination: t('/login') },
+        { source: '/login/:path*', destination: t('/login/:path*') },
       ],
       // /_next/static/* NO se rewritea aca: el CDN de Vercel los resuelve antes
       // de los rewrites y devolveria 404. Para que funcione, LT setea
@@ -50,7 +56,7 @@ const nextConfig = {
       // Fallback: cualquier path que el landing no haya manejado cae aca.
       // Esto cubre el companyTag en raiz (/<empresa>), que es la pagina publica
       // de la empresa con la lista de eventos en LibreTickets.
-      fallback: [{ source: '/:path*', destination: `${LT}/:path*` }],
+      fallback: [{ source: '/:path*', destination: t('/:path*') }],
     };
   },
 };
