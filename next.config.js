@@ -13,8 +13,15 @@ const nextConfig = {
 
   images: {
     formats: ['image/avif', 'image/webp'],
+    // Vercel intercepta /_next/image antes de evaluar rewrites y valida que el
+    // host del query `url` este en remotePatterns del proyecto actual. Como las
+    // imagenes de posts son rewriteadas a LT, necesitamos permitir aca los
+    // mismos hosts que LT. Sin esto, todas las fotos dan 400 INVALID_IMAGE_OPTIMIZE_REQUEST.
     remotePatterns: [
       { protocol: 'https', hostname: 'app.libretickets.com' },
+      { protocol: 'https', hostname: 'libretickets.com' },
+      { protocol: 'https', hostname: 'firebasestorage.googleapis.com' },
+      { protocol: 'https', hostname: 'quickchart.io' },
       { protocol: 'http', hostname: 'localhost' },
     ],
   },
