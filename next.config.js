@@ -42,11 +42,11 @@ const nextConfig = {
         { source: '/login', destination: `${LT}/login` },
         { source: '/login/:path*', destination: `${LT}/login/:path*` },
       ],
-      // Despues del filesystem del landing: si /_next/static/* no existe en este
-      // proyecto, lo pedimos a LT (chunks que pertenecen a paginas rewriteadas).
-      afterFiles: [
-        { source: '/_next/static/:path*', destination: `${LT}/_next/static/:path*` },
-      ],
+      // /_next/static/* NO se rewritea aca: el CDN de Vercel los resuelve antes
+      // de los rewrites y devolveria 404. Para que funcione, LT setea
+      // `assetPrefix=https://libretickets.com` en su next.config.js, asi su HTML
+      // referencia los chunks con URL absoluta y el browser los pide directo
+      // al origen sin pasar por icebarexperience.com.
       // Fallback: cualquier path que el landing no haya manejado cae aca.
       // Esto cubre el companyTag en raiz (/<empresa>), que es la pagina publica
       // de la empresa con la lista de eventos en LibreTickets.
