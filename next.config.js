@@ -40,9 +40,11 @@ const nextConfig = {
         { source: '/api/mercado-pago/:path*', destination: t('/api/mercado-pago/:path*') },
         { source: '/api/iframe-verify', destination: t('/api/iframe-verify') },
         { source: '/api/public/:path*', destination: t('/api/public/:path*') },
-        // Next.js internals que SI o SI tienen que ir a LT (data SSG/ISR e image proxy)
+        // Next.js internals que SI o SI tienen que ir a LT (data SSG/ISR e image proxy).
+        // OJO: `/_next/image` valida estrictamente sus query params (url, w, q) y
+        // devuelve 400 si llega cualquier extra. Por eso NO le inyectamos __tenant.
         { source: '/_next/data/:path*', destination: t('/_next/data/:path*') },
-        { source: '/_next/image', destination: t('/_next/image') },
+        { source: '/_next/image', destination: `${LT}/_next/image` },
         // Auth flows que LibreTickets necesita para login en checkout
         { source: '/api/auth/:path*', destination: t('/api/auth/:path*') },
         { source: '/login', destination: t('/login') },
