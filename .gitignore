@@ -1,0 +1,12 @@
+node_modules/
+.next/
+out/
+.env
+.env.local
+.env.*.local
+*.tsbuildinfo
+.DS_Store
+.vercel
+
+# raw video sources (kept locally for re-editing, not deployed)
+_video-source/

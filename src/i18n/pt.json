@@ -1,0 +1,165 @@
+{
+  "lang": "Português",
+  "lang_short": "PT",
+
+  "nav": {
+    "experiencias": "Experiências",
+    "sobre": "Sobre",
+    "galeria": "Galeria",
+    "faq": "Dúvidas",
+    "contato": "Contato",
+    "reservar": "Reservar",
+    "menu": "Menu",
+    "whatsapp_title": "Falar no WhatsApp",
+    "voltar": "Voltar ao site"
+  },
+
+  "hero": {
+    "tagline": "O Ártico no Brasil",
+    "title": "Bem-vindo ao Ártico, no coração do Brasil",
+    "subtitle": "45 minutos dentro de um bar 100% feito de gelo natural — copos, paredes, sofás e até as obras de arte. Capa térmica, luvas e o seu primeiro drink no copo de gelo já estão inclusos.",
+    "trust_badge": "+10.000 visitantes",
+    "chip_duration": "45 min",
+    "chip_temp": "−10°C",
+    "chip_drink": "Drink incluso",
+    "chip_rating": "4,8 ★ TripAdvisor",
+    "cta_primary": "Reservar agora",
+    "cta_primary_from": "A partir de R$ 89",
+    "cta_secondary": "Ver galeria",
+    "scroll_hint": "Role para descobrir"
+  },
+
+  "trust": {
+    "rating": "4,9 ★ no TripAdvisor",
+    "visitors": "+10.000 visitantes",
+    "cancel": "Cancelamento grátis em 24h",
+    "payment": "Pagamento 100% seguro"
+  },
+
+  "highlight": {
+    "duration_label": "Duração",
+    "duration_value": "45 minutos",
+    "includes_label": "Inclui",
+    "includes_value": "Capa + luvas + 1 drink",
+    "price_label": "Preço",
+    "price_value": "A partir de R$ 89",
+    "rating_label": "Avaliação",
+    "rating_value": "4,8 ★",
+    "rating_meta": "1.247 avaliações"
+  },
+
+  "about": {
+    "eyebrow": "A experiência",
+    "title": "Uma viagem ao Polo, sem sair do Brasil",
+    "p1": "São 40 toneladas de gelo natural esculpidas à mão pelos nossos artistas para manter o ICE BAR a −10°C o ano inteiro. Você veste a capa térmica, recebe o seu drink em um copo talhado em gelo maciço e atravessa a porta para um lugar que não existe em nenhum outro canto da região.",
+    "p2": "Cada visita dura 45 minutos: tempo de sobra para tirar fotos, brindar com a galera e levar uma história pra contar. Curto o suficiente para o seu drink não derreter — quase.",
+    "cta": "Ver experiências disponíveis",
+    "stats": {
+      "temp": "−10°C o ano todo",
+      "size": "200m² de gelo",
+      "tons": "40 toneladas esculpidas",
+      "guests": "+10.000 visitantes"
+    }
+  },
+
+  "how": {
+    "eyebrow": "Como funciona",
+    "title": "Três passos para entrar no Ártico",
+    "step1_title": "Reserve online",
+    "step1_body": "Escolha o horário e a quantidade de pessoas. Pagamento seguro em menos de 2 minutos.",
+    "step2_title": "Vista a capa térmica",
+    "step2_body": "Chegue 15 min antes. A nossa equipe te ajuda a colocar a capa isolante e as luvas.",
+    "step3_title": "Entre no Ártico",
+    "step3_body": "Atravesse a porta, brinde com o seu drink no copo de gelo e aproveite 45 minutos únicos."
+  },
+
+  "gallery": {
+    "eyebrow": "Galeria",
+    "title": "Momentos pra levar pra sempre",
+    "subtitle": "Marque #ICEBARBR e apareça aqui na nossa galeria. As melhores fotos ganham um drink de cortesia na próxima visita.",
+    "cta": "Ver no Instagram",
+    "show_more": "Ver mais {n} fotos"
+  },
+
+  "experiences": {
+    "eyebrow": "Catálogo",
+    "title": "Escolha a sua experiência",
+    "subtitle": "Da entrada rápida ao tour VIP guiado. Tem opção pra casal, família, grupo de amigos e despedidas.",
+    "duration": "Duração",
+    "from": "A partir de",
+    "book": "Reservar",
+    "empty": "Em breve: novas experiências disponíveis. Volte em alguns dias ou fale com a gente no WhatsApp."
+  },
+
+  "testimonials": {
+    "eyebrow": "Avaliações reais",
+    "title": "O que os nossos visitantes contam",
+    "subtitle": "4,8 de 5 no TripAdvisor com mais de 1.200 avaliações."
+  },
+
+  "faq": {
+    "eyebrow": "Dúvidas frequentes",
+    "title": "Tudo o que você precisa saber",
+    "questions": [
+      {
+        "q": "Posso levar crianças?",
+        "a": "Pode sim! As crianças são bem-vindas e ganham um drink especial sem álcool (mocktail tropical no copo de gelo). Indicamos a partir dos 6 anos para que aproveitem a temperatura com conforto."
+      },
+      {
+        "q": "Faz muito frio? Eu aguento os 45 minutos?",
+        "a": "A capa térmica e as luvas que entregamos são feitas para −10°C. 95% dos visitantes ficam confortáveis o tempo inteiro. Recomendamos vestir blusa de manga longa, calça e sapato fechado por baixo."
+      },
+      {
+        "q": "E se eu sentir muito frio antes do tempo?",
+        "a": "Pode sair quando quiser, sem multa nem complicação. A nossa equipe acompanha de perto o tempo todo."
+      },
+      {
+        "q": "Posso tirar fotos?",
+        "a": "Pode e queremos que tire! Marque #ICEBARBR no Instagram para a gente repostar. Dica: traga uma capinha à prova d'água para o celular (vendemos no local por R$ 15)."
+      },
+      {
+        "q": "Quantos drinks estão inclusos?",
+        "a": "1 drink no copo de gelo está incluso na entrada. Drinks adicionais ficam por conta no bar interno (de R$ 25 a R$ 45)."
+      },
+      {
+        "q": "Quanto tempo dura a experiência completa?",
+        "a": "São 45 minutos dentro do bar de gelo + 10 a 15 minutos pra vestir a capa e ouvir as instruções de segurança. No total, mais ou menos 1 hora."
+      },
+      {
+        "q": "Tem estacionamento?",
+        "a": "Sim, estacionamento gratuito por 2 horas. Depois disso, R$ 10 por hora adicional."
+      },
+      {
+        "q": "É acessível para cadeirantes?",
+        "a": "Sim, tanto a entrada quanto o bar são totalmente acessíveis. Avise no momento da reserva para a gente preparar a equipe e a capa térmica adaptada."
+      }
+    ]
+  },
+
+  "final_cta": {
+    "title": "Pronto pra encarar −10°C?",
+    "subtitle": "As reservas de fim de semana esgotam rápido. Garanta o seu horário agora.",
+    "cta": "Reservar a minha experiência",
+    "trust_rating": "4,9 (1.247 avaliações)",
+    "trust_visitors": "+10.000 visitantes felizes",
+    "trust_cancel": "Cancelamento grátis em 24h"
+  },
+
+  "sticky": {
+    "from": "A partir de",
+    "cta": "Reservar",
+    "rating_count": "1.247 avaliações"
+  },
+
+  "footer": {
+    "tagline": "O Ártico no Brasil. Um bar feito de gelo natural.",
+    "hours_title": "Horários",
+    "hours_body": "Seg a Qui: 14h às 23h\nSex e Sáb: 14h às 00h\nDom: 14h às 22h",
+    "address_title": "Endereço",
+    "links_title": "Links",
+    "follow_title": "Siga a gente",
+    "whatsapp_cta": "Fale com a gente",
+    "rights": "Todos os direitos reservados.",
+    "powered": "Tecnologia de ingressos por LibreTickets."
+  }
+}

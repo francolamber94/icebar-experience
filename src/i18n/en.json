@@ -1,0 +1,165 @@
+{
+  "lang": "English",
+  "lang_short": "EN",
+
+  "nav": {
+    "experiencias": "Experiences",
+    "sobre": "About",
+    "galeria": "Gallery",
+    "faq": "FAQ",
+    "contato": "Contact",
+    "reservar": "Book now",
+    "menu": "Menu",
+    "whatsapp_title": "Chat on WhatsApp",
+    "voltar": "Back to site"
+  },
+
+  "hero": {
+    "tagline": "The Arctic, in Brazil",
+    "title": "Step into the Arctic, in the heart of Brazil",
+    "subtitle": "45 minutes inside a fully frozen bar — the walls, the glasses, the sofas, even the artwork. Thermal cape, gloves and your first cocktail in a hand-carved ice glass, all included.",
+    "trust_badge": "10,000+ visitors",
+    "chip_duration": "45 min",
+    "chip_temp": "−10°C",
+    "chip_drink": "Drink included",
+    "chip_rating": "4.8 ★ TripAdvisor",
+    "cta_primary": "Book now",
+    "cta_primary_from": "From R$ 89",
+    "cta_secondary": "See gallery",
+    "scroll_hint": "Scroll to explore"
+  },
+
+  "trust": {
+    "rating": "4.9 ★ on TripAdvisor",
+    "visitors": "10,000+ visitors",
+    "cancel": "Free cancellation up to 24h",
+    "payment": "100% secure payment"
+  },
+
+  "highlight": {
+    "duration_label": "Duration",
+    "duration_value": "45 minutes",
+    "includes_label": "Includes",
+    "includes_value": "Cape + gloves + 1 drink",
+    "price_label": "Price",
+    "price_value": "From R$ 89",
+    "rating_label": "Rating",
+    "rating_value": "4.8 ★",
+    "rating_meta": "1,247 reviews"
+  },
+
+  "about": {
+    "eyebrow": "The experience",
+    "title": "A trip to the Arctic, without leaving Brazil",
+    "p1": "40 tons of natural ice, hand-carved by our artists, keep ICE BAR at a steady −10°C all year round. You slip on a thermal cape, get your first drink in a glass carved from solid ice, and step through the door into a place that doesn't exist anywhere else nearby.",
+    "p2": "Each visit lasts 45 minutes — long enough to take photos, share a toast and walk out with a story. Short enough that your drink won't melt. Almost.",
+    "cta": "See available experiences",
+    "stats": {
+      "temp": "−10°C all year",
+      "size": "200m² of ice",
+      "tons": "40 tons sculpted",
+      "guests": "10,000+ visitors"
+    }
+  },
+
+  "how": {
+    "eyebrow": "How it works",
+    "title": "Three steps into the Arctic",
+    "step1_title": "Book online",
+    "step1_body": "Pick your time and group size. Secure checkout in under 2 minutes.",
+    "step2_title": "Suit up",
+    "step2_body": "Show up 15 min early. Our team helps you into the insulating cape and gloves.",
+    "step3_title": "Step inside",
+    "step3_body": "Walk through the door, raise your ice glass and enjoy 45 unforgettable minutes."
+  },
+
+  "gallery": {
+    "eyebrow": "Gallery",
+    "title": "Moments worth keeping forever",
+    "subtitle": "Tag #ICEBARBR and we'll feature you. The best shots get a free drink on your next visit.",
+    "cta": "Open Instagram",
+    "show_more": "Show {n} more photos"
+  },
+
+  "experiences": {
+    "eyebrow": "Catalog",
+    "title": "Pick your experience",
+    "subtitle": "From quick admission to a guided VIP tour. Plans for couples, families, groups and bachelor parties.",
+    "duration": "Duration",
+    "from": "From",
+    "book": "Book",
+    "empty": "Coming soon: new experiences. Check back in a few days or message us on WhatsApp."
+  },
+
+  "testimonials": {
+    "eyebrow": "Real reviews",
+    "title": "What our guests say",
+    "subtitle": "4.8 out of 5 on TripAdvisor — over 1,200 reviews."
+  },
+
+  "faq": {
+    "eyebrow": "Frequently asked",
+    "title": "Everything you need to know",
+    "questions": [
+      {
+        "q": "Can I bring kids?",
+        "a": "Absolutely. Kids are welcome and get a special non-alcoholic drink (a tropical mocktail in an ice glass). We recommend ages 6 and up so they can enjoy the cold comfortably."
+      },
+      {
+        "q": "Is it really that cold? Can I last 45 minutes?",
+        "a": "The thermal cape and gloves we hand out are built for −10°C. 95% of guests stay comfortable the whole time. We recommend wearing a long-sleeve top, long pants and closed shoes underneath."
+      },
+      {
+        "q": "What if I get too cold before the 45 minutes are up?",
+        "a": "You can leave whenever you want — no fees, no fuss. Our team checks in on you the entire time."
+      },
+      {
+        "q": "Can I take photos?",
+        "a": "Please do! Tag #ICEBARBR on Instagram and we'll re-share you. Tip: bring a waterproof phone sleeve (or grab one at the desk for R$ 15)."
+      },
+      {
+        "q": "How many drinks are included?",
+        "a": "1 cocktail in an ice glass is included with admission. Extra drinks can be ordered at the inside bar (R$ 25 to R$ 45 each)."
+      },
+      {
+        "q": "How long is the full experience?",
+        "a": "45 minutes inside the ice bar + 10–15 minutes to suit up and run through the safety briefing. About 1 hour total."
+      },
+      {
+        "q": "Is there parking?",
+        "a": "Yes — free parking for 2 hours. After that, R$ 10 per additional hour."
+      },
+      {
+        "q": "Is it wheelchair accessible?",
+        "a": "Yes, both the entrance and the bar are fully wheelchair accessible. Let us know when you book so we can have the team and an adapted thermal cape ready for you."
+      }
+    ]
+  },
+
+  "final_cta": {
+    "title": "Ready for −10°C?",
+    "subtitle": "Weekend slots sell out fast. Lock in your time now.",
+    "cta": "Book my experience",
+    "trust_rating": "4.9 (1,247 reviews)",
+    "trust_visitors": "10,000+ happy guests",
+    "trust_cancel": "Free cancellation up to 24h"
+  },
+
+  "sticky": {
+    "from": "From",
+    "cta": "Book",
+    "rating_count": "1,247 reviews"
+  },
+
+  "footer": {
+    "tagline": "The Arctic in Brazil. A bar made entirely of natural ice.",
+    "hours_title": "Hours",
+    "hours_body": "Mon to Thu: 2pm – 11pm\nFri & Sat: 2pm – midnight\nSun: 2pm – 10pm",
+    "address_title": "Address",
+    "links_title": "Links",
+    "follow_title": "Follow us",
+    "whatsapp_cta": "Message us",
+    "rights": "All rights reserved.",
+    "powered": "Ticketing powered by LibreTickets."
+  }
+}
